@@ -1,0 +1,354 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.ratio16x9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.ratio16x9 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ratio4x3 {
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.ratio4x3 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.woff?rl295c") format("woff"), url("../fonts/icomoon.svg?rl295c#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e90d";
+}
+
+.icon-instagram:before {
+  content: "\e90e";
+}
+
+.icon-facebook:before {
+  content: "\e90f";
+}
+
+.icon-arrow-down:before {
+  content: "\e900";
+}
+
+.icon-arrow-left:before {
+  content: "\e905";
+}
+
+.icon-arrow-right:before {
+  content: "\e907";
+}
+
+.icon-arrow-up:before {
+  content: "\e908";
+}
+
+.icon-cheveron-down:before {
+  content: "\e901";
+}
+
+.icon-cheveron-left:before {
+  content: "\e902";
+}
+
+.icon-cheveron-outline-down:before {
+  content: "\e909";
+}
+
+.icon-cheveron-outline-left:before {
+  content: "\e90a";
+}
+
+.icon-cheveron-outline-right:before {
+  content: "\e90b";
+}
+
+.icon-cheveron-outline-up:before {
+  content: "\e90c";
+}
+
+.icon-cheveron-right:before {
+  content: "\e903";
+}
+
+.icon-cheveron-up:before {
+  content: "\e904";
+}
+
+.icon-close:before {
+  content: "\e906";
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container-no-pd {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Black") format("woff");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", -apple-system, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", "Roboto", -apple-system, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: calc(32px + 32 * ((100vw - 320px) / 850));
+}
+
+a {
+  color: #ff680a;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d65200;
+}
+
+button {
+  padding: 8px 12px;
+  border: 1px solid #454d5e;
+  background-color: #fff;
+  color: #454d5e;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+}
+
+input[type=text],
+input[type=phone],
+input[type=email],
+input[type=search],
+input[type=password],
+input[type=submit],
+input[type=number],
+select {
+  padding: 8px 12px;
+  border: 1px solid #454d5e;
+  background-color: #fff;
+}
+
+input[type=text]:focus,
+input[type=phone]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+input[type=password]:focus,
+input[type=submit]:focus,
+input[type=number]:focus,
+select:focus {
+  background-color: #f0f0f0;
+  outline: none;
+}
+
+input[type=text]:focus:not(:focus-visible),
+input[type=phone]:focus:not(:focus-visible),
+input[type=email]:focus:not(:focus-visible),
+input[type=search]:focus:not(:focus-visible),
+input[type=password]:focus:not(:focus-visible),
+input[type=submit]:focus:not(:focus-visible),
+input[type=number]:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  background-color: #f0f0f0;
+}
+
+input[type=text]:hover,
+input[type=phone]:hover,
+input[type=email]:hover,
+input[type=search]:hover,
+input[type=password]:hover,
+input[type=submit]:hover,
+input[type=number]:hover,
+select:hover {
+  background-color: #f7f7f7;
+}
+
+ul,
+ol {
+  margin: 16px 0 16px;
+  padding: 0 0 0 30px;
+}
+
+p {
+  margin: 16px 0 16px;
+}
+
+div {
+  border: 1px solid #454d5e;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.area,
+.area2 {
+  max-width: 500px;
+}
+
+.area.done,
+.area.success,
+.area2.done,
+.area2.success {
+  background-color: rgba(73, 199, 0, 0.3);
+}
+
+.from,
+.from2 {
+  background-color: rgba(94, 39, 81, 0.3);
+}
+
+.to,
+.to2 {
+  background-color: rgba(255, 235, 18, 0.3);
+}
+
+.what,
+.what2 {
+  background-color: #fff;
+  margin: 0 10px 10px;
+  padding: 10px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+}
+
+@media (min-width: 1170px) {
+  h1 {
+    font-size: 64px;
+  }
+}
